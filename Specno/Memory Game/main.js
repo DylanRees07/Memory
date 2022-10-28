@@ -1,14 +1,28 @@
 
-//Store players
+//Store players and start game from model
 player1 = {
-    player: "Bob",
+    player: "",
     score: 0
 }
 
 player2 = {
-    player: "Jones",
+    player: "",
     score: 0
 }
+
+
+$('#start-game').click(function(){
+        $('.model-container').toggleClass('hidden')
+        player1.player = $('#inpplayer1name').val()
+        player2.player = $('#inpplayer2name').val()
+        $('#player1name').text(player1.player)
+        $('#player2name').text(player2.player)
+        $('.main-content').toggleClass('hidden')
+    }
+)
+
+
+
 
 $('#player1score').text("Score: " + player1.score)
 $('#player2score').text("Score: " + player2.score)
@@ -30,8 +44,7 @@ shuffleIds = (ids) => {
   }
 
 ids = Array.from(Array(54).keys())
-shuffleIds(ids)
-console.log(ids)
+//shuffleIds(ids)
 
 var cards = $('table tr').find('td')
 
@@ -58,18 +71,20 @@ function checkMatch(){
         $('#player2score').text("Score: " + player2.score)
         flipped.length = 0
         $('.playerturn').toggleClass('hidden')
+        $('.playerturn').toggleClass('white')
+        switch (currentplayer) {
+            case player1:
+                currentplayer = player2
+                break;
+            case player2:
+                currentplayer = player1
+                break;
+            default:
+                break;
+        }
     }
     , 1500);
-    switch (currentplayer) {
-        case player1:
-            currentplayer = player2
-            break;
-        case player2:
-            currentplayer = player1
-            break;
-        default:
-            break;
-    }
+
 
 }
 
@@ -84,14 +99,4 @@ cards.click(function(){
     }
 
 })
-
-
-
-// for (var i = 0; i < cards.length; i++){
-//     cards.eq(i).attr('id', i)
-//     cards.eq(i).attr('class', 'blue')
-//     cards.eq(i).click(function(){
-//         this.attr('class', 'red')
-//     })
-// }
 

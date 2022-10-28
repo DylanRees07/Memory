@@ -1,3 +1,6 @@
+/*===============GENERAL STYLING=============*/
+
+
 *{
     box-sizing: border-box;
     font-family: Arial;
@@ -7,25 +10,106 @@
     text-align: center;
 }
 
+body{
+    background-color: #3495D1;
+    color: white;
+}
+
+/*===============START MODEL STYLING=============*/
+
+
+.model-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.model img{
+    margin: 100px;
+}
+
+.model h1{
+    font-size: 2.5rem;
+}
+
+.model input{
+    margin: 0px 20px 30px 20px;
+    padding: 8px 10px 8px 8px;
+    min-width: 15vw;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.model button{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #00BE70;
+    padding: 15px;
+    color: white;
+    border: none;
+}
+
+/*===============MAIN GAME STYLING=============*/
+
 
 .main-content{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.score-card{
-    background-color: linear-gradient();
-    width: 220px;
-    height: 344px;
-    left: 0px;
-    top: 250px;
-    border-radius: 8px;
-}
 
 table{
     width: fit-content;
     border-spacing: 10px;
 }
+
+.score-card{
+    background-color: linear-gradient();
+    width: 220px;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 10px 0px 0px 10px;
+    min-height: fit-content;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.score-card p{
+    font-size: 2rem;
+}
+
+.playerturn{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #00BE70;
+    padding: 10px;
+}
+
+.white{
+    background-color: white !important;
+    color: #3495D1 !important;
+}
+
+
 
 .game-board{
     display: flex;
@@ -51,4 +135,8 @@ table{
 
 .hidden{
     visibility: hidden !important;
+    pointer-events: none;
 }
+
+
+/*===============END MODEL STYLING=============*/

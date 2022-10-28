@@ -13,17 +13,32 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <h1 class="header-text">Memory</h1>
-    <div class="main-content">
-    <div>
-        <div class="score-card">
-            <h3>Player 1 Score</h3>
-            <p id="player1score"></p>
-        </div>
-        <div class="playerturn">
-            Its Your Turn
+    <div class="model-container">
+        <div class="model">
+            <h1>Are you ready to play?</h1>
+            <div>
+                <img src="Assets/Astronaut1.png" alt="PLAYER1">
+                <img src="Assets/Astronaut2.png" alt="PLAYER2">
+            </div>
+            <div>
+                <input id="inpplayer1name" type="text" name="player1name" placeholder="Name of Player 1">
+                <input id="inpplayer2name" type="text" name="player2name" placeholder="Name of Player 2">
+            </div>
+            <button class="green" id="start-game">Let's Play</button>
         </div>
     </div>
+    <h1 class="header-text">Memory</h1>
+    <div class="main-content hidden">
+        <div>
+            <div class="score-card">
+                <img src="Assets/Astronaut1.png" alt="PLAYER1">
+                <h1 id="player1name">Player 1 Score</h1>
+                <p id="player1score"></p>
+            </div>
+            <div class="playerturn">
+                Its Your Turn
+            </div>
+        </div>
         <div class="game-board">
             <table>
                 <tr>
@@ -94,15 +109,16 @@
                 </tr>
             </table>
         </div>
-    <div>
-        <div class="score-card">
-            <h3>Player 2 Score</h3>
-            <p id="player2score"></p>
+        <div>
+            <div class="score-card">
+                <img src="Assets/Astronaut2.png" alt="PLAYER2">
+                <h1 id="player2name">Player 2 Score</h1>
+                <p id="player2score"></p>
+            </div>
+            <div class="playerturn hidden">
+                Its Your Turn
+            </div>
         </div>
-        <div class="playerturn hidden">
-            Its Your Turn
-        </div>
-    </div>
     </div>
 </body>
 </html>
