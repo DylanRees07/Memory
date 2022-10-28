@@ -13,8 +13,8 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <div class="model-container">
-        <div class="model">
+    <div class="start-model-container">
+        <div class="start-model">
             <h1>Are you ready to play?</h1>
             <div>
                 <img src="Assets/Astronaut1.png" alt="PLAYER1">
@@ -27,7 +27,9 @@
             <button class="green" id="start-game">Let's Play</button>
         </div>
     </div>
-    <h1 class="header-text">Memory</h1>
+    <div class="header hidden">
+        <h1 class="header-text">Memory</h1>
+    </div>
     <div class="main-content hidden">
         <div>
             <div class="score-card">
@@ -118,6 +120,32 @@
             <div class="playerturn hidden">
                 Its Your Turn
             </div>
+        </div>
+    </div>
+    <div class="end-model-container hidden">
+        <div class="end-model">
+            <h1>Well Done!</h1>
+            <h1 id="h1winner">Player 1</h1>
+            <div>
+                <img src="Assets/Winner.png" alt="PLAYER1">
+            </div>
+            <div class="flex">
+                <div>
+                    <div id="div-winner" class="end-card end-card-win flex">
+                        <img src="Assets/Astronaut1.png" alt="">
+                        <p ><strong>1st Place</strong></p>
+                        <p id="winner-name">Player 1</p>
+                        <p id="winner-score">Score: </p>
+                    </div>
+                    <div id="div-loser" class="end-card end-card-loss flex">
+                        <img src="Assets/Astronaut2.png" alt="">
+                        <p><strong>2nd Place</strong></p>
+                        <p id="loser-name">Player 2</p>
+                        <p id="loser-score">Score: </p>
+                    </div>
+                </div>
+            </div>
+            <button id="play-again">Play Again</button>
         </div>
     </div>
 </body>
