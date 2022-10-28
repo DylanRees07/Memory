@@ -58,6 +58,7 @@ function checkMatch(){
         $('#player2score').text("Score: " + player2.score)
         flipped.length = 0
         $('.playerturn').toggleClass('hidden')
+        $('.playerturn').toggleClass('white')
     }
     , 1500);
     switch (currentplayer) {
@@ -84,14 +85,4 @@ cards.click(function(){
     }
 
 })
-
-
-
-// for (var i = 0; i < cards.length; i++){
-//     cards.eq(i).attr('id', i)
-//     cards.eq(i).attr('class', 'blue')
-//     cards.eq(i).click(function(){
-//         this.attr('class', 'red')
-//     })
-// }
 

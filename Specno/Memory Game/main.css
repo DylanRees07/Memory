@@ -7,10 +7,16 @@
     text-align: center;
 }
 
+body{
+    background-color: #3495D1;
+    color: white;
+}
+
 
 .main-content{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .score-card{
@@ -35,10 +41,26 @@ table{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
-.score-card h3{
-    align-items: baseline;
+.score-card p{
+    font-size: 2rem;
+}
+
+.playerturn{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #00BE70;
+    padding: 10px;
+}
+
+.white{
+    background-color: white !important;
+    color: #3495D1 !important;
 }
 
 
