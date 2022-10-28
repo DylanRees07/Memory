@@ -47,7 +47,7 @@ shuffleIds = (ids) => {
   }
 
 ids = Array.from(Array(54).keys())
-//shuffleIds(ids)
+shuffleIds(ids)
 
 var cards = $('table tr').find('td')
 
@@ -111,7 +111,7 @@ function checkMatch(){
             default:
                 break;
         }
-        if (matches === 1){
+        if (matches === 27){
             endgame()
         }
     }
