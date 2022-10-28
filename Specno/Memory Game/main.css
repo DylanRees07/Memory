@@ -27,6 +27,22 @@ table{
     border-spacing: 10px;
 }
 
+.score-card{
+    margin: 20px;
+    min-height: fit-content;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-card h3{
+    align-items: baseline;
+}
+
+
+
 .game-board{
     display: flex;
     align-items: center;
