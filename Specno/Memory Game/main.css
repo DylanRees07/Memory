@@ -18,7 +18,7 @@ body{
 /*===============START MODEL STYLING=============*/
 
 
-.model-container{
+.start-model-container, .end-model-container{
     position: fixed;
     top: 0;
     left: 0;
@@ -30,15 +30,15 @@ body{
     text-align: center;
 }
 
-.model img{
+.start-model img{
     margin: 100px;
 }
 
-.model h1{
+.start-model h1{
     font-size: 2.5rem;
 }
 
-.model input{
+.start-model input{
     margin: 0px 20px 30px 20px;
     padding: 8px 10px 8px 8px;
     min-width: 15vw;
@@ -47,7 +47,7 @@ body{
 }
 
 
-.model button{
+.start-model button{
     margin: 20px;
     text-align: center;
     font-size: 1.5rem;
@@ -140,3 +140,47 @@ table{
 
 
 /*===============END MODEL STYLING=============*/
+
+.end-model #h1winner{
+    font-size: 3rem;
+}
+
+.end-model .flex{
+    display: flex;
+}
+
+.end-model #play-again{
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 15px;
+    color: #00235B;
+    border: none;
+}
+
+.end-card{
+    height: 8vh;
+    width: 20vw;
+    color:#00235B;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 10px 10px 5px 10px;
+    border-radius: 8px;
+}
+
+.end-card img{
+    width: 100%;
+    max-width: 50px;
+}
+
+.end-card-win{
+    background-image: linear-gradient(to right, gold, white);
+}
+
+.end-card-loss{
+    background-color: white;
+}
