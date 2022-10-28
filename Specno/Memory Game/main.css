@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.header-text{
+    text-align: center;
+}
+
+
+.main-content{
+    display: flex;
+    justify-content: center;
+}
+
+.score-card{
+    background-color: linear-gradient();
+    width: 220px;
+    height: 344px;
+    left: 0px;
+    top: 250px;
+    border-radius: 8px;
+}
+
+table{
+    width: fit-content;
+    border-spacing: 10px;
+}
+
+.game-board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 842px;
+    height: 844px;
+    left: 252px;
+    top: 0px;
+    border-radius: 8px;
+    background-image: url('Assets/Game_Board.png');
+    padding: 10px;
+}
+
+.card{
+    width: 72px;
+    height: 112px;
+}
+
+.down{
+    background-image: url('Assets/Card_Back.svg') !important;
+}
+
+.hidden{
+    visibility: hidden !important;
+}
